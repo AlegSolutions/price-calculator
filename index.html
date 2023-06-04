@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculate Listing Price</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+  	<header>
+  		<nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="ALEGS_LOGO_Long_white.png" alt="Bootstrap" width="200" >
+    </a>
+  </div>
+</nav>
+	<section>
+		<div class="mt-3 container mb-3">
+			
+		<div class="row justify-content-center">
+			<div class="col">
+				<h1 class="title text-center">Price Calculator For List</h1>
+			</div>
+		</div>
+		</div>
+	</section>
+  	</header>
+    <section>
+    	<div class="container">
+    		<div class="row justify-content-center">
+    			<form class="col-sm-12 col-md-8 col-lg-6 calc-form" id="#calcForm">
+    			<div class="input-group mb-3">
+
+				  <span class="input-group-text" id="purchase-price">Product Purchase Price Exluding GST.</span>
+				  <span class="input-group-text" id="purchase-price">&#8377; </span>
+				  <input type="text" class="form-control" placeholder="Purchase Price" aria-label="Purchase Price" aria-describedby="purchase-price" id="purchasePrice">
+				</div>
+				<div class="input-group mb-3">
+					<span class="input-group-text" id="gst-rate">GST Rate 18% - Price Including GST.</span><span class="input-group-text" id="purchase-price">&#8377; </span>
+					<input type="text" class="form-control" aria-label="gst-rate" aria-describedby="gst-rate" id="priceWithGst" readonly="readonly">
+				</div>
+				<div class="input-group mb-3">
+					<span class="input-group-text" id="shipping-charge">Estimated Shipping Charge in INR.</span><span class="input-group-text" id="purchase-price">&#8377; </span>
+				  <input type="text" class="form-control" placeholder="Shipping Charge" aria-label="Estimated Shipping Charge" aria-describedby="shipping-charge" id="shippingCharge">
+				 
+				</div>
+
+				<div class="mb-3">
+				  <div class="input-group">
+				    <span class="input-group-text" id="net-price">Net Price with Shipping Charge in INR.</span>
+				    <span class="input-group-text" id="net-price">&#8377;</span>
+				    <input type="text" class="form-control" id="netPrice" aria-describedby="net-price" readonly="readonly">
+				  </div>
+				</div>
+
+				<div class="input-group mb-3">
+				  <span class="input-group-text" id="exch-rate">Exchange Rate to conver into Another Currency.</span>
+				  <span class="input-group-text" id="exch-rate">&#8377;</span>
+				  <input type="text" class="form-control" placeholder="Exchange Rate" aria-label="Amount (to the nearest dollar)" id="exchangeRate">
+					
+				</div>
+				<div class="input-group mb-3 text-center">
+					 <span class="input-group-text" id="ebay-Commission">Ebay Tax Percentage*</span>
+					 <input type="text" class="form-control" aria-label="ebay-Commission" placeholder="%" id="ebayCommission">
+				 
+					<span class="input-group-text" id="selectedCurrency">Final Price in $</span>
+				  <input type="text" class="form-control" aria-label="Amount" placeholder="Final Price" id="finalPrice" readonly="readonly" value="">
+				</div>
+				<div class="mb-3 text-center">
+
+				  
+				 	<input type="button" class="btn btn-success" value="Convert Now" id="convertCurrency">
+					<input type="reset" class="btn btn-info" value="Reset All" id="resetBtn">
+				</div>
+				
+    		</form>
+    		</div>
+    	</div>
+    </section>
+    <script src="price_calculate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+/*custom cssss */
+
+#purchase-price, #gst-rate, #shipping-charge, #net-price, #exch-rate,#final-price, #selectedCurrency, #ebay-commission {
+	font-weight: bold;
+	font-size: 14px;
+}
+#priceWithGst, #netPrice {
+background-color: #f1f1f1;
+}
+#finalPrice {
+	background-color: #0099ff;
+	color: #ffffff;
+	font-weight: bold;
+}
+#finalPrice::placeholder, #finalPrice:-ms-input-placeholder, #finalPrice::-ms-input-placeholder {
+	color: #ffffff;
+	opacity: 1;
+}
+.calc-form {
+	background-color: #E1E1E1;
+	padding: 15px 15px;
+	border-radius: 5px;
+}
